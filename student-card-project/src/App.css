@@ -1,0 +1,348 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f1f4fa;
+  color: #172542;
+}
+
+.app {
+  min-height: 100vh;
+}
+
+.navbar {
+  background: #142747;
+  color: white;
+  padding: 18px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+}
+
+.navbar span {
+  font-size: 11px;
+  letter-spacing: 2px;
+  color: #b8c8e8;
+}
+
+.hero {
+  text-align: center;
+  padding: 45px 15px;
+}
+
+.hero p:first-child {
+  color: #5273ad;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.hero h1 {
+  font-size: 34px;
+  margin: 10px 0;
+  color: #172b50;
+}
+
+.subtitle {
+  color: #78849a;
+  font-size: 14px;
+}
+
+.container {
+  width: 88%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.form-section,
+.preview-section {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.05);
+}
+
+.form-section h2,
+.preview-section h2 {
+  margin-bottom: 22px;
+  color: #1c3158;
+  font-size: 21px;
+}
+
+.form-section label {
+  display: block;
+  margin: 13px 0 7px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #52617c;
+}
+
+.form-section input,
+.form-section select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #dce2ed;
+  border-radius: 7px;
+  outline: none;
+  font-family: inherit;
+  font-size: 13px;
+  background: #fbfcff;
+}
+
+.form-section input:focus,
+.form-section select:focus {
+  border-color: #587ab8;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-box svg {
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  width: 17px;
+  color: #8290a9;
+}
+
+.input-box input {
+  padding-left: 38px;
+}
+
+.buttons {
+  display: flex;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.buttons button {
+  padding: 12px 15px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-family: inherit;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.reset-btn {
+  background: #edf1f8;
+  color: #30466e;
+}
+
+.print-btn {
+  background: #1c3158;
+  color: white;
+}
+
+.buttons button:hover {
+  opacity: 0.85;
+}
+
+/* Student Card */
+
+.student-card {
+  background: linear-gradient(135deg, #152b51, #31558b);
+  color: white;
+  border-radius: 15px;
+  padding: 23px;
+  box-shadow: 0 15px 30px rgba(20,43,81,0.2);
+  overflow: hidden;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-bottom: 2px solid #ffffff45;
+  padding-bottom: 17px;
+}
+
+.card-header h3 {
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.card-header p {
+  font-size: 9px;
+  color: #d2dced;
+  letter-spacing: 1px;
+  margin-top: 4px;
+}
+
+.card-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 22px 0;
+}
+
+.photo {
+  width: 105px;
+  height: 115px;
+  background: #e7edf6;
+  color: #31558b;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.student-info h2 {
+  font-size: 19px;
+  margin-bottom: 5px;
+  overflow-wrap: anywhere;
+}
+
+.student-info p {
+  font-size: 11px;
+  color: #d7e1f0;
+  margin-top: 7px;
+}
+
+.card-details {
+  border-top: 1px solid #ffffff45;
+  padding-top: 14px;
+}
+
+.card-details p {
+  font-size: 10px;
+  margin: 8px 0;
+  overflow-wrap: anywhere;
+}
+
+.card-footer {
+  border-top: 1px solid #ffffff45;
+  padding-top: 13px;
+  margin-top: 14px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 9px;
+  color: #d2dced;
+}
+
+.preview-text {
+  text-align: center;
+  color: #8994a9;
+  font-size: 12px;
+  margin-top: 20px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #8994a9;
+  font-size: 12px;
+  border-top: 1px solid #e2e7ef;
+}
+
+/* Responsive Design */
+
+@media (max-width: 850px) {
+  .container {
+    grid-template-columns: 1fr;
+    width: 92%;
+  }
+
+  .hero h1 {
+    font-size: 27px;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar {
+    padding: 15px;
+  }
+
+  .navbar h2 {
+    font-size: 17px;
+  }
+
+  .navbar span {
+    font-size: 8px;
+  }
+
+  .form-section,
+  .preview-section {
+    padding: 20px;
+  }
+
+  .card-content {
+    gap: 12px;
+  }
+
+  .student-info h2 {
+    font-size: 15px;
+  }
+
+  .buttons button {
+    font-size: 11px;
+    padding: 10px;
+  }
+}
+
+/* Print only the student card */
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .navbar,
+  .hero,
+  .form-section,
+  .preview-section > h2,
+  .preview-text,
+  footer {
+    display: none !important;
+  }
+
+  .container {
+    display: block;
+    width: 100%;
+    margin: 0;
+  }
+
+  .preview-section {
+    display: block;
+    padding: 20px;
+    box-shadow: none;
+  }
+
+  .student-card {
+    width: 85mm;
+    margin: 20px auto;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+}
